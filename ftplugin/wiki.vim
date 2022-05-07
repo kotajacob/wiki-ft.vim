@@ -34,10 +34,10 @@ onoremap <buffer> <plug>(wiki-ic) :call wiki_ft#text_obj#code(1, 0)<cr>
 xnoremap <buffer> <plug>(wiki-ic) :<c-u>call wiki_ft#text_obj#code(1, 1)<cr>
 
 let s:mappings = {
-      \ 'o_<plug>(wiki-ac)' : 'ac',
-      \ 'x_<plug>(wiki-ac)' : 'ac',
-      \ 'o_<plug>(wiki-ic)' : 'ic',
-      \ 'x_<plug>(wiki-ic)' : 'ic',
+      \ 'o_<plug>(wiki-ac)' : 'aC',
+      \ 'x_<plug>(wiki-ac)' : 'aC',
+      \ 'o_<plug>(wiki-ic)' : 'iC',
+      \ 'x_<plug>(wiki-ic)' : 'iC',
       \}
 
 call wiki#init#apply_mappings_from_dict(s:mappings, '<buffer>')
